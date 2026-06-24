@@ -1,0 +1,7 @@
+# Maps a user-supplied framework name to its adapter priority chain + source
+# location. Adding a new framework is a config edit here, never a code
+# change to the orchestrator or gateway.
+fastapi:
+  version: "0.115"
+  adapter_priority: [llms_txt, github_markdown, package_metadata, api, scrape, unsupported]
+  llms_txt_url: https://fastapi.tiangolo.com/llms.txt

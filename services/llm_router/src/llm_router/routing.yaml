@@ -1,0 +1,21 @@
+default_provider: ollama
+
+providers:
+  ollama:
+    base_url_env: OLLAMA_BASE_URL
+    base_url_default: http://ollama:11434
+    default_model: llama3.1:8b
+  openai:
+    api_key_env: OPENAI_API_KEY
+    default_model: gpt-4.1
+
+task_routes:
+  orchestrator_routing:     { provider: ollama, model: llama3.1:8b }
+  diagnostic_question_gen:  { provider: ollama, model: llama3.1:8b }
+  diagnostic_grading_check: { provider: ollama, model: llama3.1:8b }
+  first_pass_hint:          { provider: ollama, model: llama3.1:8b }
+  fuller_explanation:       { provider: openai, model: gpt-4.1 }
+  syllabus_builder:         { provider: openai, model: gpt-4.1 }
+  lesson_generator:         { provider: openai, model: gpt-4.1 }
+  exercise_generator:       { provider: openai, model: gpt-4.1 }
+  doc_tagging:              { provider: openai, model: gpt-4.1-mini }

@@ -1,9 +1,14 @@
 [project]
 name = "learn-god-speed"
 version = "0.1.0"
-description = "Add your description here"
+description = "AI-powered, goal-conditioned learning platform for software frameworks/libraries"
 readme = "README.md"
-requires-python = ">=3.14"
-dependencies = [
-    "langchain>=1.2.15",
-]
+requires-python = ">=3.12"
+dependencies = []
+
+[tool.uv.workspace]
+members = ["libs/shared", "services/*"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

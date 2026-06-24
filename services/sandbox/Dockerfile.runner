@@ -1,0 +1,9 @@
+# Locked-down image used per-submission by docker_runner.py. No runtime
+# `pip install` — all deps are baked in so a submission never needs network
+# egress (network_disabled=True on the container anyway, but this avoids
+# accidental reliance on it).
+FROM python:3.12-slim
+RUN pip install --no-cache-dir pytest==8.3.3
+WORKDIR /sandbox
+RUN chmod 1777 /sandbox
+USER nobody
