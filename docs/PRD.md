@@ -1,4 +1,4 @@
-# PRD — Learn God Speed
+# PRD — Learn Divine Speed
 
 ## Problem
 

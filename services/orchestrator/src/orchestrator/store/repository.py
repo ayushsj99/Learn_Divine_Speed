@@ -6,7 +6,7 @@ import psycopg
 from psycopg.rows import dict_row
 from psycopg.types.json import Jsonb
 
-DEMO_USER_EMAIL = "demo@learn-god-speed.local"
+DEMO_USER_EMAIL = "demo@learn-divine-speed.local"
 
 
 def _database_url() -> str:

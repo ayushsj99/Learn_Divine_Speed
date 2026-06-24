@@ -11,7 +11,7 @@ resolution-markers = [
 members = [
     "api-gateway",
     "doc-ingestion-worker",
-    "learn-god-speed",
+    "learn-divine-speed",
     "lgs-shared",
     "llm-router",
     "orchestrator",
@@ -529,7 +529,7 @@ wheels = [
 ]
 
 [[package]]
-name = "learn-god-speed"
+name = "learn-divine-speed"
 version = "0.1.0"
 source = { editable = "." }
 

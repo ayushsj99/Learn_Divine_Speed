@@ -25,7 +25,7 @@ def _robots_allows(url: str) -> bool:
         # robots.txt unreachable/absent: treat as permissive rather than
         # blocking ingestion on a network hiccup.
         return True
-    return parser.can_fetch("LearnGodSpeedBot/1.0", url)
+    return parser.can_fetch("LearnDivineSpeedBot/1.0", url)
 
 
 class LlmsTxtAdapter(BaseAdapter):
